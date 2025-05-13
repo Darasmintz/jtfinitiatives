@@ -1,0 +1,373 @@
+/* General Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  min-height: 100vh;
+  background-image: url(home.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: gray;   
+}
+
+a {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+header nav {
+  background-color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+}
+
+header nav ul {
+  width:  100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+header nav li {
+  height: 50px;
+}
+
+header nav a {
+  height: 100%;
+  padding: 0 40px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+header nav a:hover {
+  background-color: aquamarine;
+}
+
+header nav li:first-child {
+  margin-right: auto;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: skyblue;
+  backdrop-filter: blur(50px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sidebar li {
+  width: 100%;
+}
+
+.sidebar a {
+  width: 100%;
+}
+
+.sidebar {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 0; right: 0;
+  background: white;
+  height: 100vh;
+  width: 200px;
+  padding: 20px;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.sidebar.active {
+  display: flex;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+@media(max-width: 800px) {
+  .hideOnMobile {
+    display: none;
+  }
+}
+
+header h1 {
+  margin: 30rem;
+  text-align: center;
+  color: black;
+  font-family: system-ui;
+  font-size: 45px;
+  width: 600px;
+  text-align: center;
+}
+
+.ft {
+  color: white;
+  margin-left: 2rem;
+  font-family: Arial;
+  font-size: 14px;
+  margin-bottom: 1.5rem;
+}
+
+.cta {
+  text-decoration: none;
+  color: rgb(133, 133, 133);
+  font-weight: bold;
+  font-family: inherit;
+  transition: text-decoration 0.3s;
+}
+
+.cta:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.hi {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  font-size: x-large;
+  text-spacing-trim: 10px;
+  align-items: center;
+  padding-left: 0rem;
+  color: grey;
+  padding-top: -25rem;
+  padding-bottom: 5rem;
+}
+
+.abt {
+  width: 300px;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+.text {
+  padding-top: 18rem;
+  width: 550px;
+  margin-left: 10rem;
+  letter-spacing: 1px;
+  font-weight: 100;
+  text-align: left;
+}
+
+.some {
+  margin-top: 24px;
+}
+
+.images {
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.five-stars,
+.ko,
+.elite {
+  width: 60px;
+  margin-right: 150px;
+  border-radius: 100px;
+}
+
+span {
+  color: black;
+}
+
+.service-container {
+  color: white;
+  display: flex;
+  justify-content: left;
+  padding: 19px;
+  align-items: center;
+  padding-top: 45px;
+  padding-left: 50px;
+  padding-right: 25px;
+  background-image: url(48467.jpg);
+}
+
+.h2 {
+  width: 850px;
+  font-family: 'Times New Roman', Times, serif;
+  letter-spacing: 0px;
+}
+
+.image {
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.load {
+  width: 150px;
+  margin-left: 170px;
+  border-radius: 100px;
+  margin-bottom: 2.9rem;
+}
+
+.news {
+  background-color: white;
+  background-image: url(image.png);
+  background-position: cover;
+}
+
+/* Banner Styling */
+.service-banner {
+  background: url('load.jpg') center/cover no-repeat;
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.service-banner::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(12, 12, 44, 0.75);
+  z-index: 1;
+}
+
+.banner-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.banner-content h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.banner-content p {
+  font-size: 18px;
+}
+
+/* Services Grid Styling */
+.services-section {
+  background-color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.services-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.services-section h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #0c0c2c;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.service-card {
+  background: #f0f4fa;
+  padding: 30px 20px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  background: #ffffff;
+}
+
+.service-card.featured {
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+  font-size: 36px;
+  color: #0c0c2c;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #0c0c2c;
+}
+
+.service-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+footer {
+  background: #0c0c2c;
+  color: white;
+  padding: 40px 60px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer .column {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+footer h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin: 5px 0;
+}
+
+footer .social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  color: white;
+  font-size: 20px;
+}
+
+.copyright {
+  text-align: center;
+  background: #000;
+  color: white;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.bg {
+  background-color: white;
+  background-image: none;
+}
