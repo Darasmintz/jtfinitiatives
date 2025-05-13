@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - JTF INITIATIVES LIMITED</title>
+    <link rel="stylesheet" href="style.css">
+     <link rel="icon" href="logo1.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="45px" viewBox="0 -960 960 960" width="45px" fill="white"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="index.html">JTF INITIATIVES LIMITED</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="What we Do.html">What we Do</a></li>
+            </ul>
+            <ul>
+              <img src="logo1.png" width="35px" height="35px" alt="" class="img" style="margin-left: 30px; border-radius: 15px;">
+                <li style="margin-right: auto;"><a href="index.html" style="margin-left: -20px;">JTF INITIATIVES LIMITED</a></li>
+              
+                
+                <li onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+        <!-- Banner Section -->
+<section class="service-banner">
+    <div class="banner-content">
+      <h1 style="color: cornsilk;">Our Services</h1>
+      <p>Explore what we offer at JTF Initiative – an innovation hub for KO InnoVatech and Elite Stars projects.</p>
+    </div>
+  </section>
+  
+  <!-- Services Grid Section -->
+  <section class="services-section">
+    <div class="services-container">
+      <h2>Offer Professional Solutions</h2>
+      <div class="services-grid">
+  
+        <div class="service-card">
+          <div class="service-icon">🛡️</div>
+          <h3>Cybersecurity Training</h3>
+          <p>Empowering learners with foundational and advanced skills to defend against digital threats.</p>
+        </div>
+  
+        <div class="service-card featured">
+          <div class="service-icon">💻</div>
+          <h3>Programming Skills</h3>
+          <p>Hands-on learning in languages like Python, JavaScript, and more, with real project experiences.</p>
+        </div>
+  
+        <div class="service-card">
+          <div class="service-icon">🌐</div>
+          <h3>Web Development</h3>
+          <p>From front-end design to back-end functionality, we guide learners through full web stack dev.</p>
+        </div>
+  
+        <div class="service-card">
+          <div class="service-icon">🤝</div>
+          <h3>Peer-to-Peer Learning</h3>
+          <p>Encouraging collaboration through team projects and skill exchange among technical college students.</p>
+        </div>
+  
+        <div class="service-card">
+          <div class="service-icon">📡</div>
+          <h3>Virtual Learning Access</h3>
+          <p>Flexible, remote access to materials and mentorship that fit every learner’s schedule and pace.</p>
+        </div>
+  
+        <div class="service-card">
+          <div class="service-icon">🎯</div>
+          <h3>Employment Opportunities</h3>
+          <p>Connecting trained students with job openings, internships, and freelance gigs post-training.</p>
+        </div>
+        <div class="service-card featured">
+            <div class="service-icon">🎨</div>
+            <h3>Creative Arts</h3>
+            <p>Explore digital illustration, video editing, animation, and design to express your creativity.</p>
+          </div>
+  
+          <div class="service-card featured">
+            <div class="service-icon">🏗️</div>
+            <h3>Digital CAD</h3>
+            <p>Hands-on training with tools like AutoCAD and Tinkercad for architectural and engineering design.</p>
+          </div>
+  
+      </div>
+    </div>
+  </section>
+  
+        <script>
+            function showSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'flex'
+            }
+            function hideSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'none'
+            }
+        </script>
+    </header>
+
+    <footer>
+        <div class="column">
+          <h3>Connect with us</h3>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/jtf-initiatives-2398b4364/">🌐</a>
+            <a href="https://facebook.com/Prince-Darasimi-Olorode">📘</a>
+            <a href="https://wa.me/+2347031919805">🐦</a>
+          </div>
+        </div>
+        <div class="column">
+          <h3>Explore</h3>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="terms-privacy.html">Partners</a>
+        </div>
+        <div class="column">
+          <h3>Legal</h3>
+          <a href="terms-privacy.html">Privacy & Policy</a>
+          <a href="terms-privacy.html">Terms & Conditions</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="column">
+          <h3>Have a Question?</h3>
+          <p>11, Ifelodun Street Aboru, Iyana Ipaja Alimosho, Lagos.</p>
+          <p>+234 (0) 808 852 0105</p>
+          <p>jtfinitiatives@gmail.com</p>
+        </div>
+      </footer>
+    
+      <div class="copyright">
+        Copyright © 2024 JTF INITIATIVES LIMITED. All rights reserved.
+      </div>
+      
+    <script>
+      // Toggle sidebar visibility
+      function showSidebar() {
+        const sidebar = document.querySelector('.sidebar');
+        sidebar.classList.add('active');
+      }
+    
+      function hideSidebar() {
+        const sidebar = document.querySelector('.sidebar');
+        sidebar.classList.remove('active');
+      }
+    
+      // Ensure all images are responsive
+      window.addEventListener('load', makeImagesResponsive);
+      window.addEventListener('resize', makeImagesResponsive);
+    
+      function makeImagesResponsive() {
+        const images = document.querySelectorAll('img');
+        images.forEach(img => {
+          img.style.maxWidth = '100%';
+          img.style.height = 'auto';
+        });
+      }
+    </script>
+    
+    </body>
+    </html>
+</html>
