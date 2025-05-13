@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - JTF INITIATIVES LIMITED</title>
+  <link rel="stylesheet" href="style.css"/>
+   <link rel="icon" href="logo1.png">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f7f7f7;
+      color: #333;
+    }
+
+    header {
+      background: #0c0c2c;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      background: url(about.jpg) center/cover no-repeat;
+    }
+
+    .sidebar {
+  position:fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: skyblue;
+  backdrop-filter: blur(50px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sidebar li{
+  width: 100%;
+}
+
+.sidebar a {
+  width: 100%;
+}
+
+.sidebar {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 0; right: 0;
+  background: white;
+  height: 100vh;
+  width: 200px;
+  padding: 20px;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+.sidebar.active {
+  display: flex;
+}
+
+    .hero {
+      position: relative;
+      background: url(48467.jpg) center/cover no-repeat;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    .hero-content {
+      background: rgba(255, 255, 255, 0.8);
+      padding: 30px;
+      margin-left: 60px;
+      border-radius: 8px;
+      max-width: 400px;
+    }
+
+    .hero-content h2 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    .section {
+      padding: 50px 60px;
+      background: black;
+    }
+
+    .section h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .section .text-content {
+      color: #666;
+      max-width: 600px;
+    }
+
+    .cards {
+      display: flex;
+      gap: 40px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: grey;
+      padding: 20px;
+      border-radius: 10px;
+      flex: 1;
+    }
+
+    .card i {
+      font-size: 22px;
+      margin-bottom: 10px;
+      display: block;
+      color: #0c0c2c;
+    }
+
+    footer {
+      background: #0c0c2c;
+      color: white;
+      padding: 40px 60px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    footer .column {
+      flex: 1;
+      min-width: 200px;
+      margin-bottom: 20px;
+    }
+
+    footer h3 {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      margin: 5px 0;
+    }
+
+    footer .social-icons a {
+      display: inline-block;
+      margin-right: 10px;
+      color: white;
+      font-size: 20px;
+    }
+
+    .copyright {
+      text-align: center;
+      background: #000;
+      color: white;
+      padding: 10px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 style="color: cornsilk;">About Us - JTF Initiative Limited</h1>
+  </header>
+     <header>
+    <nav>
+      <ul class="sidebar">
+        <li onclick=hideSidebar()><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="red" hover="red"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li><a href="index.html">JTF INITIATIVES LIMITED</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="What we Do.html">What We Do</a></li>
+      </ul>
+      <ul>
+        <img src="logo1.png" width="35px" height="35px" alt="" class="img" style="margin-left: 30px; border-radius: 15px;">
+                <li style="margin-right: auto;"><a href="index.html" style="margin-left: -20px;">JTF INITIATIVES LIMITED</a></li>
+              
+        
+         <li onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+      </ul>
+    </nav>
+     <script>
+          // Toggle sidebar visibility
+          function showSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.classList.add('active');
+          }
+        
+          function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.classList.remove('active');
+          }
+        
+          // Ensure all images are responsive
+          window.addEventListener('load', makeImagesResponsive);
+          window.addEventListener('resize', makeImagesResponsive);
+        
+          function makeImagesResponsive() {
+            const images = document.querySelectorAll('img');
+            images.forEach(img => {
+              img.style.maxWidth = '100%';
+              img.style.height = 'auto';
+            });
+          }
+        </script>
+        <script>
+          // Ensure all images are responsive
+          window.addEventListener('load', makeImagesResponsive);
+          window.addEventListener('resize', makeImagesResponsive);
+        
+          function makeImagesResponsive() {
+            const images = document.querySelectorAll('img');
+            images.forEach(img => {
+              img.style.maxWidth = '100%';
+              img.style.height = 'auto';
+            });
+          }
+        </script>
+  </header>
+
+  <div class="hero">
+    <div class="hero-content">
+      <h2 style="color: #333;">Our Vision</h2>
+      <p style="color: #0c0c2c;">To become a leading platform for inclusive tech learning and innovation, helping young people unlock their potential, connect with opportunities, and shape the future of technology through collaboration and creativity.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <h2>Our Mission</h2>
+    <div class="card">
+      <p>To provide innovative, accessible, and community-driven tech education that nurtures creativity and builds practical skills in programming, cybersecurity, and creative digital fields for students in technical colleges and undergraduates.</p>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <i>👥 Our Team</i>
+        <p>Our team is composed of passionate undergraduates and early professionals dedicated to fostering innovation through coding, cybersecurity, and creative technology. We collaborate, learn, and build together to empower others and reshape the future of tech education.</p>
+      </div>
+      <div class="card">
+        <i>🤝 Our Partners</i>
+        <p>We collaborate with upcoming industry-leading startups to deliver exceptional value to our clients. See our <a href="partners.html">partners...</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="column">
+      <h3>Connect with us</h3>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/jtf-initiatives-2398b4364/">🌐</a>
+        <a href="https://facebook.com/Prince-Darasimi-Olorode">📘</a>
+        <a href="https://wa.me/+2347031919805">🐦</a>
+      </div>
+    </div>
+    <div class="column">
+      <h3>Explore</h3>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="partners.html">Partners</a>
+    </div>
+    <div class="column">
+      <h3>Legal</h3>
+      <a href="terms-privacy.html">Privacy & Policy</a>
+      <a href="terms-privacy.html">Terms & Conditions</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="column">
+      <h3>Have a Question?</h3>
+      <p>11, Ifelodun Street Aboru, Iyana Ipaja Alimosho, Lagos.</p>
+      <p>+234 (0) 808 852 0105</p>
+      <p>jtfinitiatives@gmail.com</p>
+    </div>
+  </footer>
+
+  <div class="copyright">
+    Copyright © 2024 JTF INITIATIVES LIMITED. All rights reserved.
+  </div>
+
+</body>
+</html>
