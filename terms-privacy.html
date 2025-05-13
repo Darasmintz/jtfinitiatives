@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JTF INITIATIVES | Terms & Privacy</title>
+  <link rel="stylesheet" href="style.css"/>
+   <link rel="icon" href="logo1.png">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f4f9fd;
+      color: #333;
+    }
+
+    header {
+      background-color: #ffffff;
+      padding: 20px 40px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .main-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 60px 40px;
+    }
+
+    .main-section img {
+      flex: 1;
+      max-width: 500px;
+      width: 100%;
+      margin: auto;
+    }
+
+    .text-content {
+      flex: 1;
+      max-width: 600px;
+      padding: 20px;
+    }
+
+    .text-content h1 {
+      font-size: 36px;
+      color: #2c3e50;
+      margin-bottom: 15px;
+    }
+
+    .text-content p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    section.policy {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section.policy h2 {
+      color: #1a2e5c;
+      margin-bottom: 15px;
+    }
+
+    section.policy p {
+      font-size: 15px;
+      line-height: 1.7;
+      color: #444;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background: #0c0c2c;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body class="bg">
+
+  <!-- Header Navigation -->
+  <header>
+    <nav>
+      <ul class="sidebar">
+        <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="45px" viewBox="0 -960 960 960" width="45px" fill="white"><path d="..."/></svg></a></li>
+        <li><a href="index.html">JTF INITIATIVES LIMITED</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="what-we-do.html">What We Do</a></li>
+      </ul>
+      <ul>
+        <img src="logo1.png" width="35px" height="35px" alt="" class="img" style="margin-left: 30px; border-radius: 15px;">
+                <li style="margin-right: auto;"><a href="index.html" style="margin-left: -20px;">JTF INITIATIVES LIMITED</a></li>
+              
+       
+        <li onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="..."/></svg></a></li>
+      </ul>
+    </nav>
+    <script>
+      function showSidebar(){
+        document.querySelector('.sidebar').style.display = 'flex';
+      }
+      function hideSidebar(){
+        document.querySelector('.sidebar').style.display = 'none';
+      }
+    </script>
+  </header>
+
+  <!-- Hero / Banner with Illustration -->
+  <div class="main-section">
+    <div class="text-content">
+      <h1>Terms & Privacy</h1>
+      <p>We value your trust and are committed to protecting your information. Read through our terms and privacy guidelines to understand your rights and our responsibilities.</p>
+    </div>
+    <img src="Data_security_01.jpg" alt="Privacy Illustration" />
+  </div>
+
+  <!-- Terms and Conditions Section -->
+  <section class="policy">
+    <h2>Terms and Conditions</h2>
+    <p>By accessing our website, you agree to comply with our terms of use. JTF INITIATIVES reserves the right to update or change these terms at any time without prior notice.</p>
+    <p>All content provided on this site is for educational and informational purposes only. You agree not to misuse the information, attempt unauthorized access, or disrupt the service.</p>
+    <p>All intellectual property, including content and branding, is owned or licensed by JTF INITIATIVES LIMITED. Unauthorized use is prohibited.</p>
+  </section>
+
+  <!-- Privacy Policy Section -->
+  <section class="policy">
+    <h2>Privacy Policy</h2>
+    <p>JTF INITIATIVES respects your privacy and is committed to protecting your personal data. We collect minimal information necessary to provide our services, including names, emails, and messages through our contact forms.</p>
+    <p>We do not sell or share your personal information with third parties without your consent. All data is stored securely and used solely to improve our services and communicate with you.</p>
+    <p>By using our website, you consent to this privacy policy. You may request deletion or correction of your data at any time by contacting us directly.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="column">
+      <h3>Connect with us</h3>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/jtf-initiatives-2398b4364/">🌐</a>
+        <a href="https://facebook.com/Prince-Darasimi-Olorode">📘</a>
+        <a href="https://wa.me/+2347031919805">🐦</a>
+      </div>
+    </div>
+    <div class="column">
+      <h3>Explore</h3>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="partners.html">Partners</a>
+    </div>
+    <div class="column">
+      <h3>Legal</h3>
+      <a href="terms-privacy.html">Privacy & Policy</a>
+      <a href="terms-privacy.html">Terms & Conditions</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="column">
+      <h3>Have a Question?</h3>
+      <p>11, Ifelodun Street Aboru, Iyana Ipaja Alimosho, Lagos.</p>
+      <p>+234 (0) 808 852 0105</p>
+      <p>jtfinitiatives@gmail.com</p>
+    </div>
+  </footer>
+
+  <div class="copyright">
+    Copyright © 2024 JTF INITIATIVES LIMITED. All rights reserved.
+  </div>
+</body>
+</html>
